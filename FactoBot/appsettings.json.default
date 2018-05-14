@@ -1,0 +1,10 @@
+{
+  "App": {
+    "BotToken": "NDQ1NDAzODQzNghadfafdKw.lvZ4Eyq0wK3kljB5V2h_uYGVw7w",
+    "DebugBotToken": "NDQ1NDasdfsdafsafadsdafasdfasdfGVw7w", //Can be same as BotToken if debugging and publish bot are same.
+    "FactorioDirectory": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\bin\\x64",
+    "ConfigDirectory": "C:\\Users\\[USERNAME]\\AppData\\Roaming\\Factorio\\config",
+    "GuildId": 443879981374767114,
+    "ChannelId": 443879981374767117
+  }
+}

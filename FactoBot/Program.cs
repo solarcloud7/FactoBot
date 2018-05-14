@@ -96,7 +96,7 @@ namespace FactoBot
             //get info about factorio
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
-                FileName = $@"{Dir}\Factorio.exe",
+                FileName = $@"{AppConfig.FactorioDirectory}\Factorio.exe",
                 Arguments = $"--start-server Server --server-settings \"{AppConfig.FactorioDirectory}\\server-settings.json\" -c {AppConfig.ConfigDirectory}\\config-server.ini",
                 CreateNoWindow = false,
                 WindowStyle = ProcessWindowStyle.Normal,

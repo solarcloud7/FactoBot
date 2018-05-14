@@ -17,9 +17,6 @@ namespace FactoBot
     {
         private static IConfiguration Configuration { get; set; }
 
-        const string Dir = @"C:\Program Files (x86)\Steam\steamapps\common\Factorio\bin\x64";
-        const string ConfigDir = @"C:\Users\Solar\AppData\Roaming\Factorio\config\";
-
         public Process Factorio;
 
         private DiscordSocketClient _client;
@@ -100,7 +97,7 @@ namespace FactoBot
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
                 FileName = $@"{Dir}\Factorio.exe",
-                Arguments = $"--start-server Server --server-settings \"{Dir}\\server-settings.json\" -c {ConfigDir}\\config-server.ini",
+                Arguments = $"--start-server Server --server-settings \"{AppConfig.FactorioDirectory}\\server-settings.json\" -c {AppConfig.ConfigDirectory}\\config-server.ini",
                 CreateNoWindow = false,
                 WindowStyle = ProcessWindowStyle.Normal,
                 UseShellExecute = false,
